@@ -34,8 +34,8 @@ class Sorters:
     
     @staticmethod 
     def bubble_sort(arr: list[int]) -> list[int]:
-        for i in range(len(arr)):
-            for j in range(i, len(arr) - 1): 
-                if arr[j] > arr[j + 1]: 
-                    arr[j], arr[j + 1] = arr[j + 1], arr[j]
+        for i in range(len(arr) - 1):
+           for j in range(len(arr)): 
+               if j + 1 < len(arr) and arr[j] > arr[j + 1]: 
+                   arr[j], arr[j + 1] = arr[j + 1], arr[j]
         return arr 
