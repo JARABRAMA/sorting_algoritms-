@@ -14,4 +14,5 @@ class Test(TestCase):
     def test_insertion_sort(self):
         print(Sorters.insertion_sort(self.x))
         self.assertEqual(Sorters.selection_sort(self.x), self.orderedList)
+    
 
